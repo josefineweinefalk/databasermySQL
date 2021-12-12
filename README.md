@@ -1,4 +1,8 @@
 # Sverigetopplistans databas har gått ner på grund av bristande kompetens hos teknikerna hos deras dataleverantörer. Du får därför i uppgift att bygga upp en ny databas som möter deras krav för att redovisa fjolårets topp 100.
+
+
+
+
 Krav
 • My SQL Workbench ska användas
 • Data för artist, låttitel, genre, veckor på listan och högsta placering ska finnas
