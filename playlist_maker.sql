@@ -214,3 +214,11 @@ INSERT INTO artists (artistName) VALUES ('Dua Lipa');
 INSERT INTO artists (artistName, featArtistName) VALUES ('Jack Harlow', 'Dababy/Tory/Lanez/Lil W');
 INSERT INTO artists (artistName, featArtistName) VALUES ('Jireel', 'Victor Leksell');
 SELECT * FROM artists;
+
+CREATE TABLE chartingInfo(
+currentChartPlacement int primary key auto_increment,
+song varchar(100),
+weeksOnCharts INT,
+higestChartPlacement INT,
+foreign key (song) references songs (song)
+);
