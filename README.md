@@ -4,8 +4,8 @@
 
 
 Krav
-• My SQL Workbench ska användas
-• Data för artist, låttitel, genre, veckor på listan och högsta placering ska finnas
+• My SQL Workbench ska användas<br>
+• Data för artist, låttitel, genre, veckor på listan och högsta placering ska finnas</br>
 • Databasen ska bestå av minst tre olika tabeller
 • All data i databasen ska vara sökbart
 • Data för 2020 ska användas
