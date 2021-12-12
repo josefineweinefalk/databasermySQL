@@ -1,0 +1,37 @@
+drop database if exists music;
+create database music;
+use music;
+
+
+drop table if exists artist;
+create table artist (
+	artistID		int				primary key auto_increment,
+    name			varchar(45)		not null,
+    genre			varchar(45),
+    yearBegan		int	,
+    mostRecent		int	,
+    constraint artist_fk_genre
+		foreign key (genre)
+        references genre (genreName)
+        on delete set null
+);
+
+drop table if exists artistsongalbum;
+create table artistsongalbum (
+	artistID		int,
+    songID			int,
+    albumID			int,
+    constraint artist_fk
+		foreign key (artistID)
+		references artist (artistID)
+        on delete cascade,
+    constraint song_fk
+		foreign key (songID)
+		references song (songID)
+        on delete cascade,
+    constraint album_fk
+		foreign key (albumID)
+		references album (albumID)
+        on delete cascade,
+	primary key (artistID, songID, albumID)
+);
